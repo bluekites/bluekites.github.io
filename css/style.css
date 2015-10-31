@@ -1,0 +1,139 @@
+/* General Style */
+
+body {
+  /* Typography */
+  color: #222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Nav Style */
+
+.top-navigation {
+  position: fixed;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #222;
+}
+
+.top-navigation ul {
+  float: right;
+  margin-right: 20em;
+}
+
+.top-navigation li {
+  display: inline-block;
+  letter-spacing: .2em;
+  margin-left: 1em;
+}
+
+.top-navigation li a {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.top-navigation li a:hover {
+  cursor: pointer;
+  transition: 1000ms;
+  color: #f1c40f;
+}
+
+/* Header Style */
+
+.masthead {
+  background-image: url("../images/portfolioheroimage1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 27em 0;
+  border-top: solid 5em #FFCF33;
+}
+
+.masthead-heading {
+  text-align: center;
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  letter-spacing: 0.02em;
+  color: #ecf0f1;
+  margin-top: -2em;
+  text-shadow: 3px 3px 3px #222;
+}
+
+/* Content Style */
+
+.intro-section {
+  margin-top: 2em;
+  width: 80%;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.intro-section .intro-content {
+  width: 40%;
+  height: 5em;
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.intro-content img {
+  margin: 2em 0;
+  width: 15em;
+  border-radius: 50%;
+}
+
+.intro-content > h2 {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+  margin-top: 3em;
+}
+
+.intro-content > p {
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+/* Footer Style */
+
+.content-footer {
+  margin-top: 1em;
+  padding: 2em 0;
+  background-color: #7f8c8d;
+  text-align: center;
+}
+
+.social > li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.content-footer > p {
+  color: white;
+}
+
+.content-footer .social {
+  padding: 0;
+}
+
+.content-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+  .masthead-heading {
+    font-size: 2em;
+  }
+  
+  .content-footer {
+    font-size: .7em;
+  }
+}

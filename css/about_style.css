@@ -1,0 +1,149 @@
+/* General Styles */
+
+body {
+  /* Typography */
+  color: #222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Nav Style */
+
+.top-navigation {
+  position: fixed;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #222;
+}
+
+.top-navigation ul {
+  float: right;
+  margin-right: 20em;
+}
+
+.top-navigation li {
+  display: inline-block;
+  letter-spacing: .2em;
+  margin-left: 1em;
+}
+
+.top-navigation li a {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.top-navigation li a:hover {
+  cursor: pointer;
+  transition: 1000ms;
+  color: #f1c40f;
+}
+
+/* Header Styles */
+.masthead {
+  background-image: url("../images/do-what-you-love1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 5em #FFCF33;
+  padding: 9em 0; 
+}
+
+/* centering the intro and heading text horizontally */
+.masthead-intro, 
+.masthead-heading, 
+.content-footer {
+  text-align: center;
+}
+
+.masthead-intro {
+  /* layout declaration */
+  margin-bottom: 0.1em;
+  /*Typography*/
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px white;
+}
+
+.masthead-heading {
+  /* layout declaration */
+  margin-top: -0.2em;
+  /*Typography*/
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  /*color and text shadow to make my text stand out*/
+  color: #ecf0f1;
+  text-shadow: 3px 3px 3px #222;
+}
+
+/* Section styles */
+
+.introduction-section,
+.location-section,
+.questions-section {
+  max-width: 38em;  
+  margin: 2em auto 0;
+}
+
+section > h4 {
+  color: #d35400;
+}
+
+/* Footer Styles */
+
+.content-footer {
+  margin-top: 3em;
+  padding: 2em 0;
+  background-color: #7f8c8d;
+}
+
+.social > li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.content-footer > p {
+  color: white;
+}
+
+.questions-section > h4 {
+  /*Typography*/
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.introduction-section > p,
+.location-section > p,
+.questions-section > p {
+  /*Typography*/
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.content-footer .social {
+  padding: 0;
+}
+
+.content-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+/*----Media Queries----*/
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+  .masthead-heading {
+    font-size: 2em;
+  }
+  
+  .content-footer {
+    font-size: .7em;
+  }
+}
