@@ -45,7 +45,7 @@ body {
   background-image: url("../images/portfolioheroimage1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 27em 0;
+  padding: 23em 0;
   border-top: solid 5em #FFCF33;
 }
 
@@ -56,7 +56,6 @@ body {
   font-size: 3.5em;
   letter-spacing: 0.02em;
   color: #ecf0f1;
-  margin-top: -2em;
   text-shadow: 3px 3px 3px #222;
 }
 
@@ -65,7 +64,6 @@ body {
 .intro-section {
   margin-top: 2em;
   width: 80%;
-  height: 25em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -73,9 +71,9 @@ body {
 
 .intro-section .intro-content {
   width: 40%;
-  height: 5em;
   display: inline-block;
   vertical-align: top; 
+  height: auto;
 }
 
 .intro-content img {
@@ -129,8 +127,20 @@ body {
   .masthead {
     padding: 3em 0;
   }
+  
   .masthead-heading {
     font-size: 2em;
+    margin-top: 1em;
+  }
+  
+  .intro-section .intro-content {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  .intro-content > h2 {
+    margin-top: .5em;
   }
   
   .content-footer {
