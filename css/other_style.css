@@ -39,8 +39,12 @@ body {
   color: #f1c40f;
 }
 
+/******************************
+           About Page 
+******************************/
+
 /* Header Styles */
-.masthead {
+.abouthead {
   background-image: url("../images/do-what-you-love1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,13 +53,13 @@ body {
 }
 
 /* centering the intro and heading text horizontally */
-.masthead-intro, 
-.masthead-heading, 
+.abouthead-intro, 
+.abouthead-heading, 
 .content-footer {
   text-align: center;
 }
 
-.masthead-intro {
+.abouthead-intro {
   /* layout declaration */
   margin-bottom: 0.1em;
   /*Typography*/
@@ -64,7 +68,7 @@ body {
   text-shadow: 1px 1px 1px white;
 }
 
-.masthead-heading {
+.abouthead-heading {
   /* layout declaration */
   margin-top: -0.2em;
   /*Typography*/
@@ -134,14 +138,77 @@ section > h4 {
   color: #f1c40f;
 }
 
+/******************************
+           Work Page 
+******************************/
+
+.workhead {
+  background-image: url("../images/typewriter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 5em #FFCF33;
+  padding: 8.6em 0; 
+}
+
+.workhead h1{
+  text-align: center;
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ecf0f1;
+  text-shadow: 3px 3px 3px #222;
+}
+
+.work-content {
+  text-align: center;
+  width: 80%;
+  margin-top: -2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-content h2 {
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-size: 2em;
+  margin-top: 3em;
+}
+
+.work-content .work-project {
+  width: 30%;
+  display: inline-block;
+}
+
+.work-project h4 {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.work-project a {
+  text-decoration: none;
+  color: #222;
+  letter-spacing: .1em;
+}
+
+.work-project img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /*----Media Queries----*/
 @media only screen and (max-width: 500px) {
-  .masthead {
-    padding: 3em 0;
+  .abouthead, .workhead{
+    padding: 4em 0;
   }
   
-  .masthead-heading {
+  .abouthead-heading, .workhead h1{
     font-size: 2em;
+  }
+  
+  .work-project h4 {
+    font-size: .7em;
   }
   
   .content-footer {
