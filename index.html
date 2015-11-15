@@ -2,37 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Dean Chuang Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Chuang | Web Developer</title>
     <link href='//fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!--Font-mfizz css-->
+    <link rel="stylesheet" href="font-mfizz-2.2/font-mfizz-2.2/font-mfizz.css">
+    
+    <!-- custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <nav class="top-navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
     <header class="masthead">
-      <h1 class="masthead-heading">Dean Chuang, Web Developer and UX Designer</h1>
-    </header>
-    <section class="intro-section">
-      <div class="intro-content">
-        <img src="images/dean-profile.jpg" alt="profile picture">
-      </div>  
-      <div class="intro-content">
-        <h2>A bit about me</h2>
-        <p>A highly inspired web developer/UX designer looking to help you create beautiful and elegant products.  Please take a look at the <a href="about.html">about</a> section for more info and also my <a href="work.html">portfolio</a> for some of my sample works!</p>
+      <nav class="top-navigation">
+        <ul>
+          <li><a href="#intro-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#work-section">Work</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="intro-section">
+        <div class="text-circle">
+          <div class="circle-text">
+            <h1>Hello World.<br>
+            My name is Dean.<br>
+            I love coding.</h1>
+          </div>  
+        </div>  
       </div>
-    </section>
-    <section class="portfolio-section">
+    </header>
     
-    </section>
-    <footer class="content-footer">
+    <section id="about-section">  
+      <div class="about-content container">
+        <div class="about-header">
+          <h2 class="center-text">A bit about me</h2>
+        </div>
+        <div class="row">
+          <img class="about-image col-md-4 col-md-offset-2" src="images/IMG_5742.jpg">
+          <p class="about-text col-md-4 col-md-offset-1">  I'm an inspired <b>web developer</b> and <b>UX designer</b>.  My main goal is to help you create beautiful and elegant products.  If there is a web site/app that needs to be built, I can build it!<br><br>
+        I am a graduate from UC Davis and am currently residing in Irvine, California.  
+          Irvine is a clean, quiet city that satisfies pretty much all my requirements for an ideal living area.   When I'm not busy coding, I'm usually out exploring new places for <b>AMAZING</b> food and boba!</p> 
+        </div>
+        
+        <div class="skills">
+          <h2 class="center-text">Some of my Skills</h2>
+          <div class="skill-container">
+            <div class="row">
+              <span class="icon-span"><i class="icon-wordpress"></i> <br><p class="skills-text">Wordpress</p></span>
+              <span class="icon-span"><i class="icon-heroku"></i><br><p class="skills-text">Heroku</p></span>
+              <span class="icon-span"><i class="icon-ruby-on-rails-alt"></i> <br><p class="skills-text">Ruby on Rails</p></span>
+              <span class="icon-span"><i class="icon-cplusplus"></i> <br><p class="skills-text">C++</p></span>
+              <span class="icon-span"><i class="icon-csharp"></i> <br><p class="skills-text">C#</p></span>
+            </div>  
+            <div class="row">
+              <span class="icon-span"><i class="icon-java"></i> <br><p class="skills-text">Java</p></span>
+              <span class="icon-span"><i class="icon-ruby"></i> <br><p class="skills-text">Ruby</p></span>
+              <span class="icon-span"><i class="icon-css"></i> <br><p class="skills-text">CSS3</p></span>
+              <span class="icon-span"><i class="icon-html"></i> <br><p class="skills-text">HTML5</p></span>
+              <span class="icon-span"><i class="icon-javascript-alt"></i> <br><p class="skills-text">JavaScript</p></span>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- end about content -->
+    </section>  <!-- end about section -->
+    <section id="work-section">
+      <div class="work-content container-fluid">
+        <div class="work-header">
+          <h2 class="center-text">Past Work</h2>
+        </div>
+        <div class="row">
+          
+        </div>
+        <div class="row">
+        
+        </div>
+      </div>
+    </section>  <!-- end portfolio section -->
+    <section id="contact-section">
+      <div class="contact-content container">
+        <div class="work-header">
+          <h2 class="center-text">Contact Me!</h2>
+        </div>
+          
+        
+        </div>
+      </div>
+    </section>  <!-- end contact section -->
+    <footer id="content-footer">
       <p>Follow me on these social networks!</p>
       <ul class="social">
         <li><a href="https://github.com/bluekites">Github</a></li>
@@ -41,5 +103,8 @@
       </ul>
       <p>Cover Image via <a href="http://publicdomainarchive.com/">Public Domain Archive</a></p>
     </footer>
+    
+    <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </body>
 </html>

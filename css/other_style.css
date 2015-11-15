@@ -7,13 +7,47 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Nav Style */
+h1 {
+  /* layout declaration */
+  margin-top: -0.2em;
+  /*Typography*/
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  /*color and text shadow to make my text stand out*/
+  color: #ecf0f1;
+  text-shadow: 3px 3px 3px #222;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Open Sans", "helvetica Neue", sans-serif;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+h4 {
+  /*Typography*/
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+p {
+  /*Typography*/
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
 
 .top-navigation {
   position: fixed;
   width: 100%;
   padding: 10px 10px;
   background-color: #222;
+  top: 0;
 }
 
 .top-navigation ul {
@@ -45,7 +79,7 @@ body {
 
 /* Header Styles */
 .abouthead {
-  background-image: url("../images/do-what-you-love1.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("../images/do-what-you-love1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-top: solid 5em #FFCF33;
@@ -65,21 +99,8 @@ body {
   /*Typography*/
   font-family: "Gentium Book Basic", Georgia, serif;
   font-size: 2em;
-  text-shadow: 1px 1px 1px white;
-}
-
-.abouthead-heading {
-  /* layout declaration */
-  margin-top: -0.2em;
-  /*Typography*/
-  font-family: "Open Sans", "helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  /*color and text shadow to make my text stand out*/
-  color: #ecf0f1;
-  text-shadow: 3px 3px 3px #222;
+  text-shadow: 2px 2px 2px white;
+  -webkit-text-stroke: 1px black;
 }
 
 /* Section styles */
@@ -91,11 +112,53 @@ body {
   margin: 2em auto 0;
 }
 
-section > h4 {
+.questions-section > h4 {
   color: #d35400;
 }
 
-/* Footer Styles */
+
+
+/******************************
+           Work Page 
+******************************/
+
+/* Header styles */
+
+.workhead {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("../images/typewriter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 5em #FFCF33;
+  padding: 8.6em 0; 
+}
+
+/* section styles */
+
+.work-content {
+  text-align: center;
+  width: 80%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-content .work-project {
+  width: 30%;
+  display: inline-block;
+}
+
+.work-project a {
+  text-decoration: none;
+  color: #222;
+  letter-spacing: .1em;
+}
+
+.work-project img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Footer Styles General across all pages */
 
 .content-footer {
   margin-top: 3em;
@@ -113,21 +176,6 @@ section > h4 {
   color: white;
 }
 
-.questions-section > h4 {
-  /*Typography*/
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.introduction-section > p,
-.location-section > p,
-.questions-section > p {
-  /*Typography*/
-  font-weight: 300;
-  letter-spacing: 0.05em;
-}
-
 .content-footer .social {
   padding: 0;
 }
@@ -138,73 +186,36 @@ section > h4 {
   color: #f1c40f;
 }
 
-/******************************
-           Work Page 
-******************************/
-
-.workhead {
-  background-image: url("../images/typewriter.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top: solid 5em #FFCF33;
-  padding: 8.6em 0; 
-}
-
-.workhead h1{
-  text-align: center;
-  font-family: "Open Sans", "helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ecf0f1;
-  text-shadow: 3px 3px 3px #222;
-}
-
-.work-content {
-  text-align: center;
-  width: 80%;
-  margin-top: -2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.work-content h2 {
-  font-family: "Open Sans", "helvetica Neue", sans-serif;
-  font-size: 2em;
-  margin-top: 3em;
-}
-
-.work-content .work-project {
-  width: 30%;
-  display: inline-block;
-}
-
-.work-project h4 {
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.work-project a {
-  text-decoration: none;
-  color: #222;
-  letter-spacing: .1em;
-}
-
-.work-project img {
-  max-width: 100%;
-  max-height: 100%;
-}
 
 /*----Media Queries----*/
-@media only screen and (max-width: 500px) {
-  .abouthead, .workhead{
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .abouthead {
     padding: 4em 0;
+  }
+  
+  .workhead {
+    height: 1em;
   }
   
   .abouthead-heading, .workhead h1{
     font-size: 2em;
+    -webkit-text-stroke: 0px black;
+  }
+  
+  .introduction-section,
+  .location-section,
+  .questions-section,
+  .work-content {
+    padding: 0 1em;
   }
   
   .work-project h4 {
@@ -214,4 +225,8 @@ section > h4 {
   .content-footer {
     font-size: .7em;
   }
+}
+
+@media only screen and (max-width: 320px) {
+
 }

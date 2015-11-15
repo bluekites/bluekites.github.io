@@ -1,24 +1,40 @@
 /* General Style */
+* {
+  box-sizing: border-box;
+}
 
 body {
-  /* Typography */
   color: #222;
-  font-size: 1em;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Nav Style */
+h2 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
 
+p {
+  font-size: 1.5em;
+  
+}
+
+/******************
+ * header style *
+******************/
+
+/* Nav Style */
 .top-navigation {
   position: fixed;
   width: 100%;
-  padding: 10px 10px;
+  padding-top: 10px;
+  padding-right: 10px;
   background-color: #222;
+  top: 0;
+  z-index: 1;
 }
 
 .top-navigation ul {
   float: right;
-  margin-right: 20em;
 }
 
 .top-navigation li {
@@ -39,65 +55,134 @@ body {
   color: #f1c40f;
 }
 
-/* Header Style */
+/* intro section */
 
-.masthead {
-  background-image: url("../images/portfolioheroimage1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 23em 0;
-  border-top: solid 5em #FFCF33;
+#intro-section {
+  margin-top: 40px;
+  height: 45em;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../images/do-what-you-love1.jpg");
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
+  display:-webkit-box;
+  border-top: 3px solid grey;
 }
 
-.masthead-heading {
+.text-circle {
+  position: relative;
+  width: 25em;
+  height: 25em;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.circle-text {
+  padding-top: 5em;
   text-align: center;
-  font-family: "Open Sans", "helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 3.5em;
-  letter-spacing: 0.02em;
-  color: #ecf0f1;
-  text-shadow: 3px 3px 3px #222;
+  font-weight: 900;
+  color: black;
+  text-shadow: 2px 2px 2px grey;
+  
 }
 
-/* Content Style */
+.circle-text h1 {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
 
-.intro-section {
-  margin-top: 2em;
+/******************
+ * content style *
+******************/
+
+/* about section */
+
+.about-content {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-header, .skills, .work-header {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 35px
 }
 
-.intro-section .intro-content {
-  width: 40%;
+h2.center-text {
   display: inline-block;
-  vertical-align: top; 
-  height: auto;
+  padding: 10px;
+  background-color: #3498db; 
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
-.intro-content img {
-  margin: 2em 0;
+.about-text {
+  margin-top: 20px;
+}
+.about-image {
+  width: 30em;
+}
+
+.skill-container {
+  margin-top: 2em;
+}
+
+.icon-span {
+  display: inline-block;
   width: 15em;
-  border-radius: 50%;
+  margin-left: 2em;
 }
 
-.intro-content > h2 {
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 2em;
-  margin-top: 3em;
+.skills-text {
+  text-align: center;
+  font-weight: 800;
 }
 
-.intro-content > p {
-  font-family: "Open Sans", "helvetica Neue", sans-serif;
-  letter-spacing: 0.02em;
-  font-weight: 700;
+i {
+  font-size: 6em;
 }
 
-/* Footer Style */
+i:hover {
+  color: #e74c3c;
+  transition: 1000ms;
+}
 
-.content-footer {
-  margin-top: 1em;
+i.icon-heroku {
+  padding-left: .5em;
+}
+
+i.icon-ruby-on-rails-alt {
+  padding-left: .2em;
+}
+
+i.icon-java {
+  padding-left: .4em;
+}
+
+i.icon-css {
+  padding-left: .2em;
+}
+
+i.icon-html {
+  padding-left: .2em;
+}
+
+i.icon-javascript-alt {
+  padding-left: .2em;
+}
+
+/* work section */
+
+#work-section {
+  background-color: #34495e;
+}
+
+/******************
+ * footer style *
+******************/
+
+#content-footer {
   padding: 2em 0;
   background-color: #7f8c8d;
   text-align: center;
@@ -109,28 +194,40 @@ body {
   margin-left: 10px;
 }
 
-.content-footer > p {
+#content-footer > p {
   color: white;
 }
 
-.content-footer .social {
+#content-footer .social {
   padding: 0;
 }
 
-.content-footer a {
+#content-footer a {
   text-decoration: none;
   font-weight: bold;
   color: #f1c40f;
 }
 
-@media only screen and (max-width: 500px) {
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
   .masthead {
+    background: none;
     padding: 3em 0;
   }
   
   .masthead-heading {
     font-size: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
+    text-shadow: none;
   }
   
   .intro-section .intro-content {
@@ -146,4 +243,8 @@ body {
   .content-footer {
     font-size: .7em;
   }
+}
+
+@media only screen and (max-width: 320px) {
+
 }
