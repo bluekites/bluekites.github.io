@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dean Chuang | Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     
@@ -23,8 +24,8 @@
           <li><a href="#intro-section">Home</a></li>
           <li><a href="#about-section">About</a></li>
           <li><a href="#work-section">Work</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#faq-section">FAQ</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
       <div id="intro-section">
@@ -44,8 +45,8 @@
           <h2 class="center-text">A bit about me</h2>
         </div>
         <div class="row">
-          <img class="about-image col-md-4 col-md-offset-2" src="images/IMG_5742.jpg">
-          <p class="about-text col-md-4 col-md-offset-1">  I'm an inspired <b>web developer</b> and <b>UX designer</b>.  My main goal is to help you create beautiful and elegant products.  If there is a web site/app that needs to be built, I can build it!<br><br>
+          <img class="about-image col-md-4 col-md-offset-3" src="images/IMG_5742.jpg" alt="profile-picture">
+          <p class="about-text col-md-4 col-md-offset">  I'm an inspired <b>web developer</b> and <b>UX designer</b>.  My main goal is to help you create beautiful and elegant products.  If there is a web site/app that needs to be built, I can build it!<br><br>
         I am a graduate from UC Davis and am currently residing in Irvine, California.  
           Irvine is a clean, quiet city that satisfies pretty much all my requirements for an ideal living area.   When I'm not busy coding, I'm usually out exploring new places for <b>AMAZING</b> food and boba!</p> 
         </div>
@@ -57,7 +58,7 @@
               <span class="icon-span"><i class="icon-wordpress"></i> <br><p class="skills-text">Wordpress</p></span>
               <span class="icon-span"><i class="icon-heroku"></i><br><p class="skills-text">Heroku</p></span>
               <span class="icon-span"><i class="icon-ruby-on-rails-alt"></i> <br><p class="skills-text">Ruby on Rails</p></span>
-              <span class="icon-span"><i class="icon-cplusplus"></i> <br><p class="skills-text">C++</p></span>
+              <span class="icon-span"><i class="fa fa-github"></i> <br><p class="skills-text">Github</p></span>
               <span class="icon-span"><i class="icon-csharp"></i> <br><p class="skills-text">C#</p></span>
             </div>  
             <div class="row">
@@ -74,37 +75,137 @@
     <section id="work-section">
       <div class="work-content container-fluid">
         <div class="work-header">
-          <h2 class="center-text">Past Work</h2>
+          <h2 class="center-text">Past Projects</h2>
         </div>
         <div class="row">
-          
+          <div class="saas-image col-md-4 col-md-offset-2"><img src="images/saas-mockup.jpg" alt="work-image" class="work-image"><p>hihihi</p></div>
+          <div class="saas-image col-md-4"><img src="images/pinclone.jpg" alt="work-image" class="work-image"></div>
         </div>
         <div class="row">
-        
+          <div class="saas-image col-md-4 col-md-offset-2"><img src="images/jquery-streetfighter.jpg" alt="work-image" class="work-image"></div>
+          <div class="saas-image col-md-4"><img src="images/shopping-list.jpg" alt="work-image" class="work-image"></div>
         </div>
-      </div>
+        <div class="row">
+        <div class="saas-image col-md-4 col-md-offset-2"><img src="images/fun-finder.jpg" alt="work-image" class="work-image"></div>
+        <div class="saas-image col-md-4"><img src="images/quiz-app.jpg" alt="work-image" class="work-image"></div>
+        </div>
+      </div>  <!-- end work content -->
     </section>  <!-- end portfolio section -->
+    <section id="faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <h2 class="center-text">FAQs</h2>
+        </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                Who are you?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              Full-time web developer during the day, freelancer by night, and gym enthusiast in my off hours.  Living day by day with one creative project at a time.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                Why did you decide to become a web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              I have always been interested in the tech field.  I have experience in many different programming languages and my most recent venture is the Ruby programming language created by Yukihiro Matsumoto.  I fell in love with the simplicity and elegance of the language on first use and have never looked back.  The transition into web development seems natural seeing as how Ruby on Rails is still an extremely relevant framework in the field of web development.  Another important reason is that I feel like every piece of my work in the industry is akin to putting my mark in modern history, which I find to be fascinating as well as motivating.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                What are your credentials?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Starting from my roots in biological sciences moving onto organic chemistry and financial services, I have always been a very motivated individual and achieved success.  My venture into the web development field involves mostly studies through intensive bootcamps such as Thinkful along with a multitude of curated materials from industry professionals.  I believe the best way to showcase my potential is through my past work which is all located right above in my portfolio!
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                Can you do some graphical designs for me?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+              No!  Unfortunately I am not very artistically inclined.  The design work that I am more familiar with is on the user experience side.  This is a type of design that is about more than just making something pretty.  It is about creating elegant products that users will not only want, but <em>need</em>.  It is a design philosophy that is rooted in truly understanding the users and utilizing that to maximize the usability and efficacy of your products.  That is the type of design that I do. 
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                Why should I trust you with a project?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse collapse">
+            <div class="panel-body">
+              Because after seeing the results, you will be glad that you did.
+            </div>
+          </div>
+        </div>
+      </div> <!--end accordion-->
+    </div> <!--end container-->
+    </section>  <!-- end faq section -->
     <section id="contact-section">
       <div class="contact-content container">
         <div class="work-header">
-          <h2 class="center-text">Contact Me!</h2>
+          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><h2 class="center-text">Contact Me!</h2></a>
         </div>
+        <div class="contact-text">
+          <p>Have any questions, concerns, or business inquiries?  <br>You may reach me here!</p>
+          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><button type="button" class="btn btn-success btn-lg">HIRE ME!</button></a>
           
-        
-        </div>
-      </div>
+          <div class="social-network">  
+            <p>Also please feel free to find and follow me on these social networks!</p>
+            <img src="images/instagram.svg" class="social-images" alt="instagram">
+            <img src="images/facebook.svg" class="social-images" alt="facebook">
+            <img src="images/twitter.svg" class="social-images" alt="twitter">
+            <img src="images/github.svg" class="social-images" alt="github">
+            <img src="images/linkedin.svg" class="social-images" alt="linkedin">
+          </div>  <!-- end social network -->
+        </div>  <!-- end contact text -->
+      </div>  <!-- end contact content container -->
     </section>  <!-- end contact section -->
     <footer id="content-footer">
-      <p>Follow me on these social networks!</p>
+      <p>Copyright &copy Dean Chuang 2015</p>
       <ul class="social">
         <li><a href="https://github.com/bluekites">Github</a></li>
         <li><a href="https://facebook.com">Facebook</a></li>
         <li><a href="https://twitter.com">Twitter</a></li>
       </ul>
-      <p>Cover Image via <a href="http://publicdomainarchive.com/">Public Domain Archive</a></p>
     </footer>
     
     <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </body>
 </html>

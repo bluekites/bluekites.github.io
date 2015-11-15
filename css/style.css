@@ -65,6 +65,7 @@ p {
   -webkit-box-pack:center;
   display:-webkit-box;
   border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
 }
 
 .text-circle {
@@ -76,12 +77,11 @@ p {
   opacity: 0.7;
 }
 
-.circle-text {
-  padding-top: 5em;
+.circle-text > h1{
+  padding-top: 2em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
   color: black;
-  text-shadow: 2px 2px 2px grey;
   
 }
 
@@ -97,12 +97,10 @@ p {
 /* about section */
 
 .about-content {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
-.about-header, .skills, .work-header {
+.about-header, .skills, .work-header, .faq-header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 35px
@@ -120,6 +118,7 @@ h2.center-text {
 .about-text {
   margin-top: 20px;
 }
+
 .about-image {
   width: 30em;
 }
@@ -141,6 +140,11 @@ h2.center-text {
 
 i {
   font-size: 6em;
+}
+
+.fa {
+  font-size: 6em;
+  margin-bottom: .2em
 }
 
 i:hover {
@@ -176,6 +180,74 @@ i.icon-javascript-alt {
 
 #work-section {
   background-color: #34495e;
+  border-top: 3px solid grey;
+  padding-bottom: 3em;
+}
+
+
+.work-image {
+  margin-top: 1em;
+  width: 100%;
+  height: 25em;
+  border-radius: 10px;
+}
+
+.saas-image > p {
+  position: absolute;
+  top: 10em
+}
+
+/* faq section */
+
+#faq-section {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.panel-default > .panel-heading {
+  background-color: #3498db;
+}
+
+.panel {
+  text-align: left;
+}
+
+.panel-title {
+  
+  font-weight: 700;
+  color: #fff;
+}
+
+.panel-title a:hover{
+  text-decoration: none;
+}
+
+.panel-title a{
+  text-decoration: none;
+}
+
+/* contact section */
+
+#contact-section {
+  padding-bottom: 2em;
+  border-top: 3px solid grey;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.social-network {
+  padding: 1em 0;
+}
+
+.btn {
+  margin: 2em;
+}
+
+.social-images {
+  margin-top: 1em;
+  margin-left: 2em;
 }
 
 /******************
