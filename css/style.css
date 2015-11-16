@@ -34,8 +34,20 @@ p {
   background-color: black;
 }
 
+
+
 .navbar-default .navbar-brand {
   color: white;
+}
+
+.navbar-default .navbar-brand:visited {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: yellow;
+  transition: 1000ms;
+  text-decoration: none;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -129,9 +141,15 @@ h2.center-text {
 }
 
 .about-image {
-  width: 30em;
+  width: 25em;
+  height: 33em;
 }
 
+.about-image2 {
+  width: 25em;
+  height: 33em;
+  display: none;
+}
 
 .skill-container {
   margin-top: 2em;
@@ -209,7 +227,7 @@ i.icon-javascript-alt {
 .work-image {
   width: 100%;
   height: 24em;
-  border: 8px solid black;
+  
 }
 
 
@@ -247,8 +265,10 @@ i.icon-javascript-alt {
 /* faq section */
 
 .faq-section {
+  width: 100%;
   text-align: center;
   padding-bottom: 2em;
+  box-shadow: 0px 5px 10px 10px gray;
 }
 
 .panel-default > .panel-heading {
@@ -257,6 +277,12 @@ i.icon-javascript-alt {
 
 .panel {
   text-align: left;
+}
+
+.panel-group {
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .panel-title {
@@ -299,32 +325,17 @@ i.icon-javascript-alt {
 }
 
 @media only screen and (max-width: 480px) {
-  .masthead {
-    background: none;
-    padding: 3em 0;
-  }
-  
-  .masthead-heading {
-    font-size: 2em;
-    margin-top: 2em;
-    text-shadow: none;
-  }
-  
-  .intro-section .intro-content {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  
-  .intro-content > h2 {
-    margin-top: .5em;
-  }
-  
-  .content-footer {
-    font-size: .7em;
+  .work-image {
+    width: 80%;
+    height: 10em;
+    border: 8px solid black;
   }
 }
 
 @media only screen and (max-width: 320px) {
-
+  .work-image {
+    width: 80%;
+    height: 10em;
+    border: 8px solid black;
+  }
 }

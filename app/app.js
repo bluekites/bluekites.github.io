@@ -8,6 +8,15 @@ $(document).ready(function(){
     }, 1000);
   });
   
+  // code for image hover
+  $(".image-box").mouseover(function(){
+    $(".about-image").hide();
+    $(".about-image2").show();
+  }).mouseout(function(){
+    $(".about-image2").hide();
+    $(".about-image").show();
+  })
+  
   $("a[href='#about']").click(function(e) {
     e.preventDefault();
     $('html, body').animate({
