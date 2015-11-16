@@ -17,36 +17,51 @@
     <!-- custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <header class="masthead">
-      <nav class="top-navigation">
-        <ul>
-          <li><a href="#intro-section">Home</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#work-section">Work</a></li>
-          <li><a href="#faq-section">FAQ</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dean Chuang</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#faq">Faq</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <div id="intro-section">
         <div class="text-circle">
           <div class="circle-text">
-            <h1>Hello World.<br>
+            <h1>Hello World.<a id="about"></a><br>
             My name is Dean.<br>
             I love coding.</h1>
-          </div>  
+          </div>
         </div>  
       </div>
+      
     </header>
     
-    <section id="about-section">  
-      <div class="about-content container">
+    
+    <section class="about-section container">  
+      <div class="about-content">
         <div class="about-header">
           <h2 class="center-text">A bit about me</h2>
         </div>
         <div class="row">
           <img class="about-image col-md-4 col-md-offset-3" src="images/IMG_5742.jpg" alt="profile-picture">
-          <p class="about-text col-md-4 col-md-offset">  I'm an inspired <b>web developer</b> and <b>UX designer</b>.  My main goal is to help you create beautiful and elegant products.  If there is a web site/app that needs to be built, I can build it!<br><br>
+          <p class="about-text col-md-4 col-md-offset">  I'm an inspired <b>web developer</b>.  My main goal is to help you create beautiful and elegant products.  If there is a web site/app that needs to be built, I can build it!<br><br>
         I am a graduate from UC Davis and am currently residing in Irvine, California.  
           Irvine is a clean, quiet city that satisfies pretty much all my requirements for an ideal living area.   When I'm not busy coding, I'm usually out exploring new places for <b>AMAZING</b> food and boba!</p> 
         </div>
@@ -55,14 +70,14 @@
           <h2 class="center-text">Some of my Skills</h2>
           <div class="skill-container">
             <div class="row">
-              <span class="icon-span"><i class="icon-wordpress"></i> <br><p class="skills-text">Wordpress</p></span>
+              <div id="work"></div>
+              <span class="icon-span"><i class="icon-java"></i> <br><p class="skills-text">Java</p></span>
               <span class="icon-span"><i class="icon-heroku"></i><br><p class="skills-text">Heroku</p></span>
               <span class="icon-span"><i class="icon-ruby-on-rails-alt"></i> <br><p class="skills-text">Ruby on Rails</p></span>
               <span class="icon-span"><i class="fa fa-github"></i> <br><p class="skills-text">Github</p></span>
-              <span class="icon-span"><i class="icon-csharp"></i> <br><p class="skills-text">C#</p></span>
             </div>  
+            
             <div class="row">
-              <span class="icon-span"><i class="icon-java"></i> <br><p class="skills-text">Java</p></span>
               <span class="icon-span"><i class="icon-ruby"></i> <br><p class="skills-text">Ruby</p></span>
               <span class="icon-span"><i class="icon-css"></i> <br><p class="skills-text">CSS3</p></span>
               <span class="icon-span"><i class="icon-html"></i> <br><p class="skills-text">HTML5</p></span>
@@ -72,30 +87,51 @@
         </div>
       </div>  <!-- end about content -->
     </section>  <!-- end about section -->
-    <section id="work-section">
-      <div class="work-content container-fluid">
+    <section class="work-section container-fluid">
+      <div class="work-content">
         <div class="work-header">
-          <h2 class="center-text">Past Projects</h2>
+          <h2 class="center-text">Sample Project Highlights</h2>
         </div>
-        <div class="row">
-          <div class="saas-image col-md-4 col-md-offset-2"><img src="images/saas-mockup.jpg" alt="work-image" class="work-image"><p>hihihi</p></div>
-          <div class="saas-image col-md-4"><img src="images/pinclone.jpg" alt="work-image" class="work-image"></div>
+        <div class="work-row row">
+          <div class="col-md-4 col-md-offset-2"><a href="http://saas-mockup.herokuapp.com/" target="_blank"><img id="saas-image" src="images/saas-mockup.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>A software as a service E-commerce web app built using Ruby on Rails.  Makes use of the Stripe API for payment handling and SendGrid for e-mail handling.  Fully responsive and built using best practices.</h3></div></a></div>
+          <div class="col-md-4"><a href="https://pin-carnation.herokuapp.com/" target="_blank"><img id="pinclone-image"  src="images/pinclone.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>A clone of the popular image posting site Pinterest using Ruby on Rails.  Makes use of Devise for user authentication, Paperclip for file attachment and ImageMagick for image conversion.  Fully responsive and built following best practices. </h3></div></a></div>
         </div>
-        <div class="row">
-          <div class="saas-image col-md-4 col-md-offset-2"><img src="images/jquery-streetfighter.jpg" alt="work-image" class="work-image"></div>
-          <div class="saas-image col-md-4"><img src="images/shopping-list.jpg" alt="work-image" class="work-image"></div>
+        <div class="work-row row">
+          <div class="col-md-4 col-md-offset-2"><a href="http://bluekites.github.io/jQuery-streetfighter/" target="_blank"><img id="sf-image" src="images/jquery-streetfighter.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>My first foray into the wonderful world of jQuery.  This small dynamic website showcases the power and simplicity of jQuery interaction with HTML and CSS to create dynamic content.  If you are a Street Fighter fan, yes, I know, that is not Ryu's theme but Guile is awesome!</h3></div></a></div>
+          <div class="col-md-4"><a href="http://bluekites.github.io/shopping-list/" target="_blank"><img id="shop-image" src="images/shopping-list.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>A basic ToDo list app in the form of a shopping list.  A right of passage for any aspiring web programmer.  The app is designed to have a clean and simple interface as well as maximizing the ease of use.</h3></div></a></div>
         </div>
-        <div class="row">
-        <div class="saas-image col-md-4 col-md-offset-2"><img src="images/fun-finder.jpg" alt="work-image" class="work-image"></div>
-        <div class="saas-image col-md-4"><img src="images/quiz-app.jpg" alt="work-image" class="work-image"></div>
+        <div class="work-row row">
+        <div id="contact"></div>
+        <div class="col-md-4 col-md-offset-2"><a href="http://bluekites.github.io/fun-finder/" target="_blank"><img id="api-image" src="images/fun-finder.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>A fun API hack using the TasteKid API.  The app utilizes jQuery in order to make XMLHttpRequests to the TasteKid server for data retrieval.  User will be able to receive similar form of entertainment that they may enjoy based on their search query.</h3></div></a></div>
+        <div class="col-md-4"><a href="http://bluekites.github.io/quiz-app/" target="_blank"><img id="quiz-image" src="images/quiz-app.jpg" alt="work-image" class="work-image"><div class="contenthover"><h3>A simple JavaScript quiz app made using...JavaScript!  Showcases the understanding of object oriented programming principles as well as mastery of control flow.</h3></div></a></div>
         </div>
       </div>  <!-- end work content -->
     </section>  <!-- end portfolio section -->
-    <section id="faq-section">
-      <div class="container">
-        <div class="faq-header">
-          <h2 class="center-text">FAQs</h2>
+    
+    <section class="contact-section container">
+      <div class="contact-content">
+        <div class="work-header">
+          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><h2 class="center-text">Contact Me!</h2></a>
         </div>
+        <div class="contact-text">
+          <p>Have any questions, concerns, or business inquiries?  <br>You may reach me here!</p>
+          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><button type="button" class="btn btn-success btn-lg">HIRE ME!</button></a>
+          <div id="faq"></div>
+          <div class="social-network">  
+            <p>Also please feel free to find and follow me on these social networks!</p>
+            <img src="images/instagram.svg" class="social-images" alt="instagram">
+            <img src="images/facebook.svg" class="social-images" alt="facebook">
+            <img src="images/twitter.svg" class="social-images" alt="twitter">
+            <a href="https://github.com/bluekites"><img src="images/github.svg" class="social-images" alt="github"></a>
+            <img src="images/linkedin.svg" class="social-images" alt="linkedin">
+          </div>  <!-- end social network -->
+        </div>  <!-- end contact text -->
+      </div>  <!-- end contact content container -->
+    </section>  <!-- end contact section -->
+    <section class="faq-section container">
+      <div class="faq-header">
+        <h2 class="center-text">FAQs</h2>
+      </div>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -175,37 +211,15 @@
       </div> <!--end accordion-->
     </div> <!--end container-->
     </section>  <!-- end faq section -->
-    <section id="contact-section">
-      <div class="contact-content container">
-        <div class="work-header">
-          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><h2 class="center-text">Contact Me!</h2></a>
-        </div>
-        <div class="contact-text">
-          <p>Have any questions, concerns, or business inquiries?  <br>You may reach me here!</p>
-          <a href="mailto:deanchuang1@gmail.com?subject=I+would+like+to+work+with+you"><button type="button" class="btn btn-success btn-lg">HIRE ME!</button></a>
-          
-          <div class="social-network">  
-            <p>Also please feel free to find and follow me on these social networks!</p>
-            <img src="images/instagram.svg" class="social-images" alt="instagram">
-            <img src="images/facebook.svg" class="social-images" alt="facebook">
-            <img src="images/twitter.svg" class="social-images" alt="twitter">
-            <img src="images/github.svg" class="social-images" alt="github">
-            <img src="images/linkedin.svg" class="social-images" alt="linkedin">
-          </div>  <!-- end social network -->
-        </div>  <!-- end contact text -->
-      </div>  <!-- end contact content container -->
-    </section>  <!-- end contact section -->
     <footer id="content-footer">
       <p>Copyright &copy Dean Chuang 2015</p>
-      <ul class="social">
-        <li><a href="https://github.com/bluekites">Github</a></li>
-        <li><a href="https://facebook.com">Facebook</a></li>
-        <li><a href="https://twitter.com">Twitter</a></li>
-      </ul>
     </footer>
     
     <!-- Bootstrap JavaScript -->
+  <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="app/jqueryhover.js"></script>
+  <script src="app/app.js"></script>
   </body>
 </html>
