@@ -248,6 +248,7 @@ i.icon-javascript-alt {
   top: 0;
   margin:0;
   padding:30px;
+  overflow: auto;
   display: none;
 }
 
@@ -337,7 +338,7 @@ i.icon-javascript-alt {
 /* Media Query */
 
 @media only screen and (max-width: 1024px) {
-  
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -346,12 +347,14 @@ i.icon-javascript-alt {
 
 @media only screen and (max-width: 480px) {
   
- 
-  .content-holder {
-    margin-top: 1em;
-  }
 }
 
 @media only screen and (max-width: 320px) {
- 
+  .content-holder {
+    margin-top: 1em;
+  }
+  
+  .content-holder h3{
+    font-size: 1em;
+  }
 }
