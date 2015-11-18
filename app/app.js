@@ -34,10 +34,10 @@ $(document).ready(function(){
   })*/
   
   // code for smooth scrolling
-  $("a[href='#']").click(function(e){
+  $("a[href='#home']").click(function(e){
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: 0
+        scrollTop: $("#home").offset().top
     }, 1000);
   });
   
