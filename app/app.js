@@ -1,19 +1,8 @@
 $(document).ready(function(){
   
+  $(window).resize();
   
   
-  // code for image hover
-  $(".about-image").mouseenter(function(){
-    $(".about-image").fadeOut(800, function(){
-      $(".about-image2").fadeIn(800, function(){
-        $(".about-image2").mouseleave(function(){
-          $(".about-image2").fadeOut(800, function(){
-            $(".about-image").fadeIn(800);
-          });
-        });
-      });
-      });
-    });
   
   /*$(".about-image").hover(function(){
     $(".about-image").fadeOut(800, function(){
@@ -107,28 +96,21 @@ $(document).ready(function(){
     $('#quiz-image.content-holder h3').fadeOut(1000);
   });
   
-  /*$('#saas-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-  $('#pinclone-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-  $('#sf-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-  $('#shop-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-  $('#api-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-  $('#quiz-image').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });*/
+});
+
+$(window).resize(function() {
+   if ($(this).width() > 480) {
+     // code for image hover
+      $(".about-image").mouseenter(function(){
+        $(".about-image").fadeOut(800, function(){
+          $(".about-image2").fadeIn(800, function(){
+            $(".about-image2").mouseleave(function(){
+              $(".about-image2").fadeOut(800, function(){
+                $(".about-image").fadeIn(800);
+              });
+            });
+          });
+        });
+      });
+   }
 });

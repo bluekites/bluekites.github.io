@@ -6,7 +6,8 @@
 body {
   position: relative;
   color: #222;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 h2 {
@@ -38,9 +39,8 @@ p {
 
 .navbar {
   background-color: black;
+  
 }
-
-
 
 .navbar-default .navbar-brand {
   color: white;
@@ -60,6 +60,7 @@ p {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  
 }
 
 .navbar-default .navbar-nav > li > a:visited,
@@ -90,8 +91,6 @@ p {
   -webkit-box-align:center;
   -webkit-box-pack:center;
   display:-webkit-box;
-  border-top: 3px solid grey;
-  border-bottom: 3px solid grey;
 }
 
 .text-circle {
@@ -124,7 +123,7 @@ p {
 
 .about-section {
   width: 100%;
-  background-color: #FFF7F6; 
+  background-color: #e9ece5; 
 }
 
 .about-header, .skills, .faq-header {
@@ -178,6 +177,11 @@ h2.center-text {
   font-weight: 800;
 }
 
+.skills-header {
+  margin-bottom: 2em;
+}
+  
+
 i {
   font-size: 6em;
 }
@@ -229,9 +233,8 @@ i.icon-javascript-alt {
 }
 
 .work-section {
-  background-color: #34495e;
   padding-bottom: 3em;
-  background-color: #CFD6D7;
+  background-color: #b3c2bf;
 }
 
 .work-image {
@@ -274,7 +277,7 @@ i.icon-javascript-alt {
 .contact-section {
   width: 100%;
   padding-bottom: 2em;
-  border-top: 3px solid grey;
+  background-color: #c0dfd9;
 }
 
 .contact-text {
@@ -301,10 +304,11 @@ i.icon-javascript-alt {
   width: 100%;
   text-align: center;
   padding-bottom: 2em;
+  background-color: #3b3a36;
 }
 
 .panel-default > .panel-heading {
-  background-color: #3498db;
+  background-color: #e3e0cf;
 }
 
 .panel {
@@ -319,7 +323,7 @@ i.icon-javascript-alt {
 
 .panel-title {
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 .panel-title a:hover{
@@ -349,15 +353,83 @@ i.icon-javascript-alt {
 /* Media Query */
 
 @media only screen and (max-width: 1024px) {
-
+  .skills-header {
+    margin-bottom: 2em;
+  }
+  
+  .skills-text {
+    font-size: 1em;
+  }
+  
+  .divider {
+    height: 2em;
+  }
+  
+  .icon-span {
+    width: 8em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   
+  .divider {
+    height: 2em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  #intro-section {
+    margin-top: 40px;
+    height: 30em;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/do-what-you-love1.jpg");
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+  }
+
+  .text-circle {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  .circle-text > h1{
+    padding-top: 2em;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 .2em white;
+  }
+
+  .circle-text h1 {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+  }
+
+  .skills-header {
+    margin-bottom: 1em;
+  }
   
+  .icon-span {
+    width: 8em;
+  }
+  
+  i {
+    font-size: 4em;
+  }
+
+  .fa {
+    font-size: 4em;
+    margin-bottom: .2em
+  }
+  
+  .skills-text {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 320px) {
