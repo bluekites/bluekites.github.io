@@ -1,27 +1,5 @@
 $(document).ready(function(){
-  
   $(window).resize();
-  
-  
-  
-  /*$(".about-image").hover(function(){
-    $(".about-image").fadeOut(800, function(){
-      $(".about-image2").fadeIn(800);
-    });
-  }, function(){
-    $(".about-image2").fadeOut(800, function(){
-       $(".about-image").fadeIn(800);
-    });
-  });*/
-  
-/*  $(".image-box").hover(function(){
-    $(".about-image").hide();
-    $(".about-image2").show();
-  }, function(){
-    $(".about-image2").hide();
-    $(".about-image").show();
-  })*/
-  
   // code for smooth scrolling
   $("a[href='#home']").click(function(e){
     e.preventDefault();
@@ -101,16 +79,16 @@ $(document).ready(function(){
 $(window).resize(function() {
    if ($(this).width() > 480) {
      // code for image hover
-      $(".about-image").mouseenter(function(){
-        $(".about-image").fadeOut(800, function(){
-          $(".about-image2").fadeIn(800, function(){
-            $(".about-image2").mouseleave(function(){
-              $(".about-image2").fadeOut(800, function(){
-                $(".about-image").fadeIn(800);
-              });
+    $(".about-image").mouseenter(function(){
+      $(".about-image").fadeOut(800, function(){
+        $(".about-image2").fadeIn(800, function(){
+          $(".about-image2").mouseleave(function(){
+            $(".about-image2").fadeOut(800, function(){
+              $(".about-image").fadeIn(800);
             });
           });
         });
       });
+    });
    }
 });
