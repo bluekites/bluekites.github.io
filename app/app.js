@@ -68,10 +68,10 @@ $(document).ready(function(){
     $('#api-image.content-holder h3').fadeOut(1000);
   });
   
-  $('#quiz-image').hover(function(){
-    $('#quiz-image.content-holder h3').fadeIn(1000);
+  $('#rails-shopping-image').hover(function(){
+    $('#rails-shopping-image.content-holder h3').fadeIn(1000);
   }, function(){
-    $('#quiz-image.content-holder h3').fadeOut(1000);
+    $('#rails-shopping-image.content-holder h3').fadeOut(1000);
   });
   
 });
