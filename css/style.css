@@ -431,7 +431,18 @@ i.icon-javascript-alt {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 786px) {
+  .about-image {
+    display: none;
+  }
+  .about-image2 {
+    display: block;
+    margin-left: auto;
+    margih-right: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .content-holder {
     margin-top: 1em;
   }
