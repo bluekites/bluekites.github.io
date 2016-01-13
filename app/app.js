@@ -50,10 +50,10 @@ $(document).ready(function(){
     $('#pinclone-image.content-holder h3').fadeOut(1000);
   });
   
-  $('#sf-image').hover(function(){
-    $('#sf-image.content-holder h3').fadeIn(1000);
+  $('#wyslegal-image').hover(function(){
+    $('#wyslegal-image.content-holder h3').fadeIn(1000);
   }, function(){
-    $('#sf-image.content-holder h3').fadeOut(1000);
+    $('#wyslegal-image.content-holder h3').fadeOut(1000);
   });
   
   $('#shop-image').hover(function(){
