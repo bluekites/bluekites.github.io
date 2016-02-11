@@ -93,7 +93,8 @@ p {
 #intro-section {
   margin-top: 40px;
   height: 65em;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/do-what-you-love1.jpg");
+  background: linear-gradient( rgba(25, 25, 122, 0.3), rgba(25, 25, 122, 0.3) ), url("../images/portfoliobg.jpg");
+  background-size: cover;
   -webkit-box-align:center;
   -webkit-box-pack:center;
   display:-webkit-box;
@@ -392,7 +393,8 @@ i.icon-javascript-alt {
   #intro-section {
     margin-top: 40px;
     height: 30em;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/do-what-you-love1.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/portfoliobg.jpg");
+    background-size: cover;
     -webkit-box-align:center;
     -webkit-box-pack:center;
     display:-webkit-box;
@@ -436,8 +438,21 @@ i.icon-javascript-alt {
 }
 
 @media only screen and (max-width: 480px) {
+  h2.center-text {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 1em;
+    color: #558BC3;
+    text-transform: uppercase;
+  }
+  
+  p{
+    font-size: 1em;
+  }
+  
   .content-holder {
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
   
   .content-holder h3{
