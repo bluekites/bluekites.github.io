@@ -1,6 +1,13 @@
 $(document).ready(function(){
   $(window).resize();
   // code for smooth scrolling
+  $(".navbar-brand").click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#home").offset().top
+    }, 1000);
+  });
+  
   $("a[href='#home']").click(function(e){
     e.preventDefault();
     $('html, body').animate({
