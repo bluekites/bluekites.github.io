@@ -332,6 +332,7 @@ i.icon-javascript-alt {
 .panel-title {
   font-weight: 700;
   color: white;
+  cursor: pointer;
 }
 
 #accordion .panel-heading a {
